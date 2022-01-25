@@ -1,0 +1,57 @@
+Coursera Weak8. Programming Assignment
+
+Part
+Find Closest Centroid - findClosestCentroids.m (Done)
+Compute Centroid Means - computeCentroids.m (Done)
+
+PCA - pca.m (Done)
+Project Data - projectData.m (Done)
+Recover Data - recoverData.m
+
+------ ex7.m ------
+part1. Find Closest Centroids (Done)
+	should complete findClosestCentroids.m file
+
+(findClosestCentroids.m introduction statement summary)
+Input : X, centroids
+Return : idx ()
+
+computes the centroid memberships for every example.
+return the closest centroids in idx for a dataset X where each row is a single example.
+idx should be m x 1 vector.
+
+
+part2. Compute Means
+	should complete computeCentroids.m file
+
+(computeCentroids.m introduction statement summary)
+Input : X, idx, K
+Return : Centroids
+
+this function returns the new centroids by computing the means of the data points assigned to each centroid
+
+
+------ ex7_pca.m ------
+part1. Load Example Dataset
+
+part2. Principal Component Analysis (Done)
+	should complete pca.m file
+
+(pca.m introduction statement summary)
+Input : X_norm
+return U, S
+
+PCA run principal component analysis on the dataset X
+
+part3. Dimension Reduction (Done)
+	should complete projectData.m file and recoverData.m file
+
+(projectData.m introduction statement summary)
+Input : X_norm, U, K
+return : z
+
+projectdata computes the reduced data representation when projecting only on the top k eigenvectors.
+
+(recoverData.m introduction statement summary)
+Input : Z, U, K
+return : X_rec
